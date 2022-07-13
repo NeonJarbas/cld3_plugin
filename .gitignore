@@ -1,0 +1,29 @@
+# created by virtualenv automatically
+../venv
+.DS_Store
+
+# PyCharm project
+.idea/
+.idea/workspace.xml
+
+.idea/workspace.xml
+
+
+.idea/workspace.xml
+
+.idea/workspace.xml
+
+
+.idea/workspace.xml
+
+.idea/workspace.xml
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
