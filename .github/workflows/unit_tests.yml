@@ -36,13 +36,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements/requirements.txt
           pip install -r requirements/test_requirements.txt
-      - name: Get Credential
-        run: |
-            mkdir -p ~/.local/share/neon
-            echo $LIBRE_CREDS > ~/.local/share/neon/libre.json
-        shell: bash
-        env:
-          AMAZON_CREDS: ${{secrets.amazon_creds}}
       - name: Test cld3 Detector
         run: |
           pytest tests/test_detect.py --doctest-modules --junitxml=tests/test-detect-results.xml
